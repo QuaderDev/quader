@@ -1,0 +1,91 @@
+<mat-drawer-container class="main-container" autosize>
+	<mat-drawer #drawer class="main-sidenav" mode="over" position="end">
+		<app-menu (hideMenuEmitter)="drawer.toggle()"></app-menu>
+	</mat-drawer>
+
+	<mat-drawer-content>
+		<div class="main-sidenav-content main-content">
+
+			<div class="animation-box" [ngClass]="{'fadeOutUp': hideAnimation}">
+				<app-main-animation></app-main-animation>
+			</div>
+
+			<div class="main-scroller" id="main-scroller" [ngClass]="{'fadeIn': showMenu}">
+				<!-- River house -->
+				<div class="panel">
+					<a routerLink="/river-house">
+						<h2 class="sub-title"><span class="thin">River</span><br><span class="fat">House</span></h2>
+						<div class="learn-more-box">
+							<div class="learn-more-button"><div class="circle"></div></div>
+							<p>Learn more</p>
+						</div>
+					</a>
+				</div>
+				<!-- Stone house -->
+				<div class="panel" [ngClass]="{'fadeIn': showMenu}">
+					<h2 class="sub-title"><span class="thin">Stone</span><br><span class="fat">House</span></h2>
+					<div class="learn-more-box">
+						<div class="learn-more-button"><div class="circle"></div></div>
+						<p>Learn more</p>
+					</div>
+				</div>
+				<!-- Summer house -->
+				<div class="panel">
+					<h2 class="sub-title"><span class="thin">Summer</span><br><span class="fat">House</span></h2>
+					<div class="learn-more-box">
+						<div class="learn-more-button"><div class="circle"></div></div>
+						<p>Learn more</p>
+					</div>
+				</div>
+				<!-- Zoloche interior -->
+				<div class="panel">
+					<h2 class="sub-title"><span class="thin">Zoloche</span><br><span class="fat">Interior</span></h2>
+					<div class="learn-more-box">
+						<div class="learn-more-button"><div class="circle"></div></div>
+						<p>Learn more</p>
+					</div>
+				</div>
+				<!-- Green hills interior -->
+				<div class="panel">
+					<h2 class="sub-title"><span class="thin">Green hills</span><br><span class="fat">Interior</span></h2>
+					<div class="learn-more-box">
+						<div class="learn-more-button"><div class="circle"></div></div>
+						<p>Learn more</p>
+					</div>
+				</div>
+				<!-- Mooring interior -->
+				<div class="panel">
+					<h2 class="sub-title"><span class="thin">Mooring</span><br><span class="fat">Interior</span></h2>
+					<div class="learn-more-box">
+						<div class="learn-more-button"><div class="circle"></div></div>
+						<p>Learn more</p>
+					</div>
+				</div>
+			</div>
+
+			<button [ngClass]="{'fadeIn': showMenu}" type="button" class="menu" (click)="drawer.toggle()">
+				<span class="long-line"></span>
+				<span class="short-line"></span>
+			</button>
+
+			<div class="quader logo"></div>
+
+			<div class="scroll-hint" [ngClass]="{'fadeIn': showMenu}">
+				<span class="down">&darr;</span>
+				<span class="scroll-title">Scroll for more</span>
+			</div>
+
+			<div class="get-in-touch-box" [ngClass]="{'fadeIn': showMenu}">
+				<span class="get-in">+</span>
+			</div>
+
+			<div class="scrolling-indicator" [ngClass]="{'fadeIn': showMenu}">
+				<div class="current-page">01</div>
+				<div class="line"></div>
+				<div class="total-pages">06</div>
+			</div>
+		</div>
+	</mat-drawer-content>
+
+
+</mat-drawer-container>

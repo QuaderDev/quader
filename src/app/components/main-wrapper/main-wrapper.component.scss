@@ -1,0 +1,280 @@
+$font-size: 124px;
+
+@keyframes fadeOutUp {
+	from {
+		opacity: 1;
+		height: 100%;
+	}
+
+	to {
+		opacity: 0;
+		transform: translate3d(0, -100%, 0);
+		height: 0;
+	}
+}
+
+.fadeOutUp {
+	animation: fadeOutUp 2s 1 forwards;
+}
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+.fadeIn {
+	animation: fadeIn 2s 1 forwards;
+}
+
+.main-scroller {
+	position: relative;
+	overflow: hidden;
+	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.top {
+	font-size: 80%;
+	color: hsla(0, 0%, 100%, .25);
+	position: relative;
+	top: -.2em;
+	cursor: pointer;
+}
+
+.panel {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	font-size: 10vmin;
+	padding: 1em 1em 1em 19%;
+	box-sizing: border-box;
+	color: hsla(0, 0%, 100%, .1);
+	cursor: default;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+
+	a{
+		outline: none;
+		text-decoration-line: none;
+	}
+
+	.sub-title {
+		font-size: $font-size;
+		color: #FFFFFF;
+		line-height: 1;
+		margin: 0 0 32px;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		.thin {
+			font-weight: 100;
+		}
+		.fat {
+
+		}
+	}
+
+	.learn-more-box {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		cursor: pointer;
+		margin-left: 8px;
+
+		.learn-more-button {
+			width: 48px;
+			height: 48px;
+			border-radius: 50%;
+			border: 2px solid #F2F2F2;
+			margin-right: 16px;
+			background: transparent;
+			outline: none;
+			display: flex;
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			.circle {
+				width: 14px;
+				height: 14px;
+				background: #F2F2F2;
+				border-radius: 50%;
+				margin: auto;
+			}
+		}
+		p {
+			font-size: 18px;
+			margin: auto;
+			color: rgba(255, 255, 255, 0.8);
+		}
+	}
+}
+
+.panel:nth-child(1) {
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.15), rgba(27, 30, 32, 0.15)), url('../../../assets/images/river-house.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.panel:nth-child(2) {
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.14), rgba(27, 30, 32, 0.14)), url('../../../assets/images/stone-house.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.panel:nth-child(3) {
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.15), rgba(27, 30, 32, 0.15)), url('../../../assets/images/summer-house.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.panel:nth-child(4) {
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.29), rgba(27, 30, 32, 0.29)), url('../../../assets/images/zoloche_interior.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.panel:nth-child(5) {
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.2), rgba(27, 30, 32, 0.2)), url('../../../assets/images/green-hills-interior.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.panel:nth-child(6) {
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.13), rgba(27, 30, 32, 0.13)), url('../../../assets/images/mooring_interior.jpg') no-repeat center;
+    background-size: cover;
+}
+.menu {
+	position: absolute;
+	right: 60px;
+	top: 60px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	opacity: 0;
+
+	.long-line {
+		width: 39px;
+		height: 3px;
+		background: #FFFFFF;
+		display: block;
+		box-sizing: border-box;
+		margin-bottom: 11px;
+	}
+	.short-line {
+		width: 19px;
+		height: 3px;
+		background: #FFFFFF;
+		display: block;
+		box-sizing: border-box;
+	}
+}
+.mat-drawer-container.main-container {
+	height: 100vh;
+	.mat-drawer.main-sidenav {
+		width: 100%;
+	}
+}
+
+mat-drawer-content {
+	overflow: hidden;
+	background: #333333;
+}
+
+.quader.logo {
+	background: url('../../../assets/images/logo_white.svg') no-repeat center;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	width: 60px;
+	height: 60px;
+	opacity: 0;
+}
+
+.scroll-hint {
+	position: absolute;
+	bottom: 50px;
+	left: 70px;
+	color: rgba(255, 255, 255, 0.5);
+	opacity: 0;
+
+	.down {
+		font-size: 24px;
+	}
+	.scroll-title {
+		font-size: 18px;
+	}
+}
+
+.get-in-touch-box {
+	width: 66px;
+	height: 66px;
+	background: white;
+	color: #333333;
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+
+	&:hover {
+		cursor: pointer;
+	}
+	.get-in {
+		font-size: 33px;
+		font-weight: 100;
+	}
+}
+
+.scrolling-indicator {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	position: absolute;
+	top: 35%;
+	left: 40px;
+
+	opacity: 0;
+
+	.current-page {
+		font-size: 48px;
+		line-height: 1;
+		letter-spacing: 0.04em;
+
+		color: #FFFFFF;
+	}
+
+	.line {
+		min-height: 205px;
+		border: 3px solid white;
+		width: 0;
+		border-radius: 3px;
+		margin: 10px 0;
+	}
+	.total-pages {
+		font-size: 24px;
+		line-height: 1;
+		letter-spacing: 0.04em;
+		color: #FFFFFF;
+	}
+}
+
+

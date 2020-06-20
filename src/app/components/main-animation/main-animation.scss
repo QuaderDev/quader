@@ -1,5 +1,3 @@
-// ***Preliminary
-
 @keyframes logo-bounce {        
 
     0% {
@@ -18,7 +16,7 @@
         width: 50%;
     }
     to {
-        width: 42%;
+        width: 50%;
     }
 }
 
@@ -38,10 +36,6 @@
     background: #1B1E20;
     width: 100%;
     height: 100vh;
-
-    // display: flex;
-    // flex-direction: row;
-    // align-items: center;
 
     .logo-box {
         height: 100%;
@@ -101,4 +95,32 @@
             }
         }
     }
+}
+
+@media (max-width: 576px) {
+
+    @keyframes title-moving {
+        0% {
+            margin-left: -65%;
+        }
+    
+        100% {
+            margin-left: 5px;
+        }
+    
+    }
+
+    .animation-wrapper {
+        .logo-box {
+
+            &.animate {
+                width: 25%;
+            }
+        }
+    
+        .quader-box {
+            width: 65%;
+        }
+    }
+
 }
