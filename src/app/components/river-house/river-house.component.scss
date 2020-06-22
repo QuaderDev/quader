@@ -1,5 +1,5 @@
 section.river-house {
-  background-color: #333333;
+  background-color: #1B1E20;
 
   header {
     min-height: 810px;
@@ -164,6 +164,7 @@ section.river-house {
         }
       }
       .feel {
+        margin-bottom: 88px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -189,9 +190,62 @@ section.river-house {
               font-weight: 100;
               font-size: 24px;
               line-height: 140%;
+              text-align: justify;
             }
           }
         }
+      }
+
+      .understand {
+        margin-bottom: 450px;
+        .understand-img-box{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+
+          :nth-child(2) {
+            position: absolute;
+            top: 75%;
+            left: 13%;
+          }
+        }
+        .understand-text-box {
+          max-width: 508px;
+          max-height: 476px;
+          margin: 8% 22% 0 auto;
+
+          h3 {
+            //font-family: TT Norms Pro;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 64px;
+            margin-bottom: 62px;
+            color: #FFFFFF;
+          }
+          p {
+            font-weight: 100;
+            font-size: 24px;
+            line-height: 140%;
+            letter-spacing: 0.08em;
+            color: #FFFFFF;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    padding: 0 22px;
+    button {
+      width: 100%;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      margin-bottom: 30px;
+      img {
+        width: 100%;
       }
     }
   }

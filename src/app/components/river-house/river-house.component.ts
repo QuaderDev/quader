@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
 
+import {Location} from '@angular/common';
+
 @Component({
   selector: 'app-river-house',
   templateUrl: './river-house.component.html',
@@ -7,7 +9,7 @@ import {Component} from '@angular/core';
 })
 export class RiverHouseComponent {
 
-  constructor() {
+  constructor(public _location: Location) {
   }
 
 }
