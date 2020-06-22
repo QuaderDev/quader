@@ -9,6 +9,7 @@ export class MainWrapperComponent implements OnInit {
 
   public hideAnimation: boolean;
   public showMenu: boolean;
+  public fullGetIn: boolean;
 
   constructor() {
     this.hideAnimation = false;
@@ -153,5 +154,13 @@ export class MainWrapperComponent implements OnInit {
   showMenuButton() {
     this.showMenu = true;
   }
+
+  over() {
+    this.fullGetIn = true;
+  };
+
+  out() {
+    this.fullGetIn = false;
+  };
 
 }

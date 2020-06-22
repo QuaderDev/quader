@@ -122,7 +122,6 @@ $font-size: 124px;
 		}
 		p {
 			font-size: 18px;
-			margin: auto;
 			color: rgba(255, 255, 255, 0.8);
 		}
 	}
@@ -157,32 +156,54 @@ $font-size: 124px;
 	background: linear-gradient(0deg, rgba(27, 30, 32, 0.13), rgba(27, 30, 32, 0.13)), url('../../../assets/images/mooring_interior.jpg') no-repeat center;
     background-size: cover;
 }
-.menu {
+
+.menu-box {
 	position: absolute;
 	right: 60px;
 	top: 60px;
-	background: transparent;
-	border: none;
-	cursor: pointer;
-	outline: none;
 	opacity: 0;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
 
-	.long-line {
-		width: 39px;
-		height: 3px;
-		background: #FFFFFF;
-		display: block;
-		box-sizing: border-box;
-		margin-bottom: 11px;
+	.menu {
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		outline: none;
+		.long-line {
+			width: 39px;
+			height: 3px;
+			background: #FFFFFF;
+			display: block;
+			box-sizing: border-box;
+			margin-bottom: 11px;
+		}
+		.short-line {
+			width: 19px;
+			height: 3px;
+			background: #FFFFFF;
+			display: block;
+			box-sizing: border-box;
+		}
 	}
-	.short-line {
-		width: 19px;
-		height: 3px;
-		background: #FFFFFF;
-		display: block;
-		box-sizing: border-box;
+
+	.lang-switcher {
+		margin-right: 40px;
+		button {
+			background: transparent;
+			border: none;
+			font-weight: 500;
+			font-size: 18px;
+			color: #FFFFFF;
+			outline: none;
+			&:hover {
+				cursor: pointer;
+			}
+		}
 	}
 }
+
 .mat-drawer-container.main-container {
 	height: 100vh;
 	.mat-drawer.main-sidenav {
@@ -234,8 +255,14 @@ mat-drawer-content {
 	justify-content: center;
 	opacity: 0;
 
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 96.3%;
+
 	&:hover {
 		cursor: pointer;
+		width: 193px;
+		border-radius: 63px;
 	}
 	.get-in {
 		font-size: 33px;

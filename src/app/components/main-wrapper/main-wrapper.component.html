@@ -7,12 +7,12 @@
 		<div class="main-sidenav-content main-content">
 
 			<div class="animation-box" [ngClass]="{'fadeOutUp': hideAnimation}">
-				<app-main-animation></app-main-animation>
+<!--				<app-main-animation></app-main-animation>-->
 			</div>
 
 			<div class="main-scroller" id="main-scroller" [ngClass]="{'fadeIn': showMenu}">
 				<!-- River house -->
-				<div class="panel">
+				<div class="panel" [ngClass]="{'fadeIn': showMenu}">
 					<a routerLink="/river-house">
 						<h2 class="sub-title"><span class="thin">River</span><br><span class="fat">House</span></h2>
 						<div class="learn-more-box">
@@ -63,10 +63,20 @@
 				</div>
 			</div>
 
-			<button [ngClass]="{'fadeIn': showMenu}" type="button" class="menu" (click)="drawer.toggle()">
-				<span class="long-line"></span>
-				<span class="short-line"></span>
-			</button>
+
+            <div class="menu-box" [ngClass]="{'fadeIn': showMenu}">
+                <div class="menu-wrapper">
+                    <button type="button" class="menu" (click)="drawer.toggle()">
+                        <span class="long-line"></span>
+                        <span class="short-line"></span>
+                    </button>
+                </div>
+
+                <div class="lang-switcher">
+                    <button>RU</button>
+                </div>
+            </div>
+
 
 			<div class="quader logo"></div>
 
@@ -75,8 +85,9 @@
 				<span class="scroll-title">Scroll for more</span>
 			</div>
 
-			<div class="get-in-touch-box" [ngClass]="{'fadeIn': showMenu}">
+			<div class="get-in-touch-box" [ngClass]="{'fadeIn': showMenu}"  (mouseover)='over()' (mouseout)='out()'>
 				<span class="get-in">+</span>
+<!--                <span class="get-in">+ Get in touch</span>-->
 			</div>
 
 			<div class="scrolling-indicator" [ngClass]="{'fadeIn': showMenu}">

@@ -64,7 +64,9 @@ section.river-house {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
+      padding: 0 175px 0 65px;
+      margin-bottom: 115px;
 
       h3 {
         font-weight: bold;
@@ -74,6 +76,122 @@ section.river-house {
       .overview {
         font-size: 24px;
         color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-width: 540px;
+        p {
+          span {
+            display: inline-block;
+            &:nth-child(1) {
+              font-weight: 100;
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    article.subject {
+      padding: 0 65px;
+
+      .team {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 160px;
+
+        .team-box {
+          padding-top: 74px;
+          h3 {
+            font-weight: bold;
+            font-size: 64px;
+            color: #FFFFFF;
+            margin-bottom: 74px;
+          }
+
+          ul {
+            list-style-type: none;
+            padding: 0;
+            li {
+              font-size: 24px;
+              line-height: 1;
+              letter-spacing: 0.04em;
+              text-decoration-line: underline;
+              color: #FFFFFF;
+              margin-bottom: 48px;
+              font-weight: 100;
+
+              &:nth-child(3) {
+                margin: none;
+              }
+            }
+          }
+        }
+
+        .team-img {
+          margin-right: 115px;
+        }
+      }
+
+      .see {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 160px;
+
+        .see-img {
+          margin-right: 60px;
+        }
+
+        .see-box {
+          color: #FFFFFF;
+          max-width: 530px;
+
+          h3 {
+            font-weight: bold;
+            font-size: 64px;
+            margin-bottom: 54px;
+          }
+          .see-text {
+            p {
+              font-size: 24px;
+              line-height: 140%;
+              font-weight: 100;
+            }
+          }
+        }
+      }
+      .feel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .feel-img {
+          width: 100%;
+          margin-bottom: 60px;
+          img {
+            width: 100%;
+          }
+        }
+        .feel-box {
+          .feel-text {
+            display: flex;
+            flex-direction: row;
+            color: white;
+            align-items: center;
+            h3 {
+              font-weight: bold;
+              font-size: 64px;
+              margin: 0 102px 0 0;
+            }
+            p {
+              font-weight: 100;
+              font-size: 24px;
+              line-height: 140%;
+            }
+          }
+        }
       }
     }
   }
