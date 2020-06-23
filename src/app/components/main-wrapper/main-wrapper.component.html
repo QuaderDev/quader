@@ -3,14 +3,14 @@
 		<app-menu (hideMenuEmitter)="drawer.toggle()"></app-menu>
 	</mat-drawer>
 
-	<mat-drawer-content>
+	<mat-drawer-content [ngClass]="{'fixed': hideAnimation}">
 		<div class="main-sidenav-content main-content">
 
 			<div class="animation-box" [ngClass]="{'fadeOutUp': hideAnimation}">
-<!--				<app-main-animation></app-main-animation>-->
+				<app-main-animation></app-main-animation>
 			</div>
 
-			<div class="main-scroller" id="main-scroller" [ngClass]="{'fadeIn': showMenu}">
+			<div class="main-scroller" id="main-scroller">
 				<!-- River house -->
 				<div class="panel" [ngClass]="{'fadeIn': showMenu}">
 					<a routerLink="/river-house">

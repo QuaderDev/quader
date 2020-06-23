@@ -17,15 +17,6 @@ $font-size: 124px;
 	animation: fadeOutUp 2s 1 forwards;
 }
 
-@-webkit-keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -35,9 +26,10 @@ $font-size: 124px;
 		opacity: 1;
 	}
 }
+
 .fadeIn {
-	animation: fadeIn 2s 1 forwards;
-}
+	 animation: fadeIn 2s both;
+ }
 
 .main-scroller {
 	position: relative;
@@ -67,6 +59,7 @@ $font-size: 124px;
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
+
 
 	a{
 		outline: none;
@@ -128,32 +121,32 @@ $font-size: 124px;
 }
 
 .panel:nth-child(1) {
-	background: linear-gradient(0deg, rgba(27, 30, 32, 0.15), rgba(27, 30, 32, 0.15)), url('../../../assets/images/river-house.jpg') no-repeat center;
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.15), rgba(27, 30, 32, 0.15)), url('../../../assets/images/river-house.jpg') no-repeat center center;
 	background-size: cover;
 }
 
 .panel:nth-child(2) {
-	background: linear-gradient(0deg, rgba(27, 30, 32, 0.14), rgba(27, 30, 32, 0.14)), url('../../../assets/images/stone-house.jpg') no-repeat center;
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.14), rgba(27, 30, 32, 0.14)), url('../../../assets/images/stone-house.jpg') no-repeat center center;
 	background-size: cover;
 }
 
 .panel:nth-child(3) {
-	background: linear-gradient(0deg, rgba(27, 30, 32, 0.15), rgba(27, 30, 32, 0.15)), url('../../../assets/images/summer-house.jpg') no-repeat center;
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.15), rgba(27, 30, 32, 0.15)), url('../../../assets/images/summer-house.jpg') no-repeat center center;
 	background-size: cover;
 }
 
 .panel:nth-child(4) {
-	background: linear-gradient(0deg, rgba(27, 30, 32, 0.29), rgba(27, 30, 32, 0.29)), url('../../../assets/images/zoloche_interior.jpg') no-repeat center;
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.29), rgba(27, 30, 32, 0.29)), url('../../../assets/images/zoloche_interior.jpg') no-repeat center center;
 	background-size: cover;
 }
 
 .panel:nth-child(5) {
-	background: linear-gradient(0deg, rgba(27, 30, 32, 0.2), rgba(27, 30, 32, 0.2)), url('../../../assets/images/green-hills-interior.jpg') no-repeat center;
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.2), rgba(27, 30, 32, 0.2)), url('../../../assets/images/green-hills-interior.jpg') no-repeat center center;
 	background-size: cover;
 }
 
 .panel:nth-child(6) {
-	background: linear-gradient(0deg, rgba(27, 30, 32, 0.13), rgba(27, 30, 32, 0.13)), url('../../../assets/images/mooring_interior.jpg') no-repeat center;
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.13), rgba(27, 30, 32, 0.13)), url('../../../assets/images/mooring_interior.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -212,8 +205,14 @@ $font-size: 124px;
 }
 
 mat-drawer-content {
-	overflow: hidden;
-	background: #333333;
+
+	&.fixed {
+		background: linear-gradient(0deg, rgba(27, 30, 32, 0.15), rgba(27, 30, 32, 0.15)), url('../../../assets/images/river-house.jpg') no-repeat center center;
+		background-size: cover;
+	}
+	&.unfixed {
+		background: #F2F2F2;
+	}
 }
 
 .quader.logo {

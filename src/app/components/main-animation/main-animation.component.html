@@ -1,14 +1,8 @@
 <section>
-    <div class='animation-wrapper'>
-        <div [ngClass]="{'logo-box': !animateBox, 'logo-box animate': animateBox}">
-            <div class="logo-flex-wrapper">
-                <img [ngClass]="{'logo': !animateLogo, 'logo animate': animateLogo}" src="assets/images/logo_white.svg"  alt="Logo"/>
-            </div>
+    <div class="animation-wrapper">
+        <div [ngClass]="{ 'logo-box': !animateLogo, 'logo-box slide': animateLogo }">
+            <img [ngClass]="{ 'logo': !animateLogo, 'logo twist': animateLogo, 'fadeOut': logoFadeOut }" src="assets/images/logo_black.svg"  alt="Logo"/>
         </div>
-        <div class='quader-box'>
-            <div class="title-flex-wrapper">
-                <img [ngClass]="{'quader': !this.animateTitle, 'quader animate': this.animateTitle}" src="assets/images/uader_white.svg"  alt="Full Logo"/>
-            </div>
-        </div>
+        <img [ngClass]="{ 'quader': !animateTitle, 'quader entering': animateTitle, 'fadeOut': logoFadeOut }" src="assets/images/uader_black.svg"  alt="Full Logo"/>
     </div>
 </section>

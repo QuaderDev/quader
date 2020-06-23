@@ -21,10 +21,10 @@ export class MainWrapperComponent implements OnInit {
         , 1000);
 
     setTimeout(() => { this.hideMainAnimationLayer() }
-    , 3000);
+    , 5000);
 
     setTimeout(() => { this.showMenuButton() }
-        , 4000)
+        , 5000)
   }
 
   scrolling() {

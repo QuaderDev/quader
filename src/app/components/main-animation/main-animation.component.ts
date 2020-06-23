@@ -9,11 +9,13 @@ export class MainAnimationComponent implements OnInit {
   animateLogo;
   animateBox;
   animateTitle;
+  logoFadeOut;
 
   constructor() {
     this.animateLogo = false;
     this.animateBox = false;
     this.animateTitle = false;
+    this.logoFadeOut = false;
   }
 
   ngOnInit() {
@@ -26,6 +28,9 @@ export class MainAnimationComponent implements OnInit {
       this.animateBox = !this.animateBox;
       this.animateTitle = !this.animateTitle;
     }, 0);
+    setTimeout(()=> {
+      this.logoFadeOut = !this.logoFadeOut;
+    }, 3500);
   }
 
 }
