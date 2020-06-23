@@ -205,14 +205,9 @@ $font-size: 124px;
 }
 
 mat-drawer-content {
-
-	&.fixed {
-		background: linear-gradient(0deg, rgba(27, 30, 32, 0.15), rgba(27, 30, 32, 0.15)), url('../../../assets/images/river-house.jpg') no-repeat center center;
-		background-size: cover;
-	}
-	&.unfixed {
-		background: #F2F2F2;
-	}
+	overflow: hidden;
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.15), rgba(27, 30, 32, 0.15)), url('../../../assets/images/river-house.jpg') no-repeat center center;
+	background-size: cover;
 }
 
 .quader.logo {

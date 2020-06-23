@@ -3,7 +3,7 @@
 		<app-menu (hideMenuEmitter)="drawer.toggle()"></app-menu>
 	</mat-drawer>
 
-	<mat-drawer-content [ngClass]="{'fixed': hideAnimation}">
+	<mat-drawer-content>
 		<div class="main-sidenav-content main-content">
 
 			<div class="animation-box" [ngClass]="{'fadeOutUp': hideAnimation}">
@@ -13,7 +13,7 @@
 			<div class="main-scroller" id="main-scroller">
 				<!-- River house -->
 				<div class="panel" [ngClass]="{'fadeIn': showMenu}">
-					<a routerLink="/river-house">
+					<a (click)="goTo('/river-house')">
 						<h2 class="sub-title"><span class="thin">River</span><br><span class="fat">House</span></h2>
 						<div class="learn-more-box">
 							<div class="learn-more-button"><div class="circle"></div></div>

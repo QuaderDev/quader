@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Router } from "@angular/router";
+
 @Component({
   selector: 'main-wrapper',
   templateUrl: 'main-wrapper.component.html',
@@ -10,10 +12,12 @@ export class MainWrapperComponent implements OnInit {
   public hideAnimation: boolean;
   public showMenu: boolean;
   public fullGetIn: boolean;
+  public hideBackground: boolean;
 
-  constructor() {
+  constructor(private router: Router) {
     this.hideAnimation = false;
     this.showMenu = false;
+    this.hideBackground = true;
    }
 
   ngOnInit(): void {
@@ -24,7 +28,10 @@ export class MainWrapperComponent implements OnInit {
     , 5000);
 
     setTimeout(() => { this.showMenuButton() }
-        , 5000)
+        , 5000);
+
+    setTimeout(() => { this.hideContainerBackground() }
+        , 7000);
   }
 
   scrolling() {
@@ -151,6 +158,10 @@ export class MainWrapperComponent implements OnInit {
     this.hideAnimation = true;
   }
 
+  hideContainerBackground() {
+    this.hideBackground = !this.hideBackground;
+  }
+
   showMenuButton() {
     this.showMenu = true;
   }
@@ -162,5 +173,9 @@ export class MainWrapperComponent implements OnInit {
   out() {
     this.fullGetIn = false;
   };
+
+  goTo(path: string):void {
+    this.router.navigateByUrl(path);
+  }
 
 }
