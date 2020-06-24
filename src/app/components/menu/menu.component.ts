@@ -1,4 +1,5 @@
 import {Component, EventEmitter, Output} from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-menu',
@@ -9,11 +10,15 @@ export class MenuComponent {
 
   @Output() hideMenuEmitter = new EventEmitter<boolean>();
 
-  constructor() {
+  constructor(private router: Router) {
   }
 
   hideMenuHandler() {
     this.hideMenuEmitter.emit(true);
+  }
+
+  goTo(path: string):void {
+    this.router.navigateByUrl(path);
   }
 
 }
