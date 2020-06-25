@@ -13,7 +13,7 @@
 			<div class="main-scroller" id="main-scroller">
 				<!-- River house -->
 				<div class="panel" [ngClass]="{'fadeIn': showMenu}">
-					<span (click)="goTo('/river-house')">
+					<button (click)="goTo('/river-house')" [ngClass]="{'animate': showMenu}">
 						<h2 class="sub-title">
 							<span class="thin">River</span><br><span class="fat">House</span>
 						</h2>
@@ -21,7 +21,7 @@
 							<div class="learn-more-button"><div class="circle"></div></div>
 							<p>Learn more</p>
 						</div>
-					</span>
+					</button>
 				</div>
 				<!-- Stone house -->
 				<div class="panel" [ngClass]="{'fadeIn': showMenu}">

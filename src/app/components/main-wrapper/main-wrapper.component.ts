@@ -32,6 +32,9 @@ export class MainWrapperComponent implements OnInit {
 
     setTimeout(() => { this.hideContainerBackground() }
         , 7000);
+
+    setTimeout(() => { this.hideContainerBackground() }
+        , 7000);
   }
 
   scrolling() {

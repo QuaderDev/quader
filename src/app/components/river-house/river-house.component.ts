@@ -8,6 +8,7 @@ import {Location} from '@angular/common';
   styleUrls: ['./river-house.component.scss']
 })
 export class RiverHouseComponent {
+  teamImgUrl = '../../../assets/images/river-house-team-img.PNG';
 
   constructor(public _location: Location) {
   }
