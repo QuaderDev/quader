@@ -1,5 +1,11 @@
 $font-size: 124px;
 
+@font-face {
+	font-family: 'TT Norms Regular';
+//src: url('../assets/fonts/TTNorms-Regular.ttf') format(Example: 'truetype' or 'opentype' depending on the file extension of your font);
+	src: url('../../../assets/fonts/TTNorms-Regular.ttf') format('truetype');
+}
+
 @keyframes fadeOutUp {
 	from {
 		opacity: 1;
@@ -49,6 +55,8 @@ $font-size: 124px;
 	 animation: fadeIn 1.25s both;
  }
 
+
+
 .main-scroller {
 	position: relative;
 	overflow: hidden;
@@ -88,9 +96,13 @@ $font-size: 124px;
 
 	.sub-title {
 		font-size: $font-size;
+		font-family: 'TT Norms Regular', sans-serif;
 		color: #FFFFFF;
 		line-height: 1;
 		margin: 0 0 32px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 
 		&:hover {
 			cursor: pointer;
@@ -100,7 +112,8 @@ $font-size: 124px;
 			font-weight: 100;
 		}
 		.fat {
-
+			font-family: "TT Norms Bold", sans-serif;
+			font-weight: 600;
 		}
 	}
 
