@@ -13,6 +13,7 @@ export class MainWrapperComponent implements OnInit {
   public showMenu: boolean;
   public fullGetIn: boolean;
   public hideBackground: boolean;
+  private animationCounter: number;
 
   constructor(private router: Router) {
     this.hideAnimation = false;
@@ -25,7 +26,7 @@ export class MainWrapperComponent implements OnInit {
         , 1000);
 
     setTimeout(() => { this.hideMainAnimationLayer() }
-    , 5000);
+        , 5000);
 
     setTimeout(() => { this.showMenuButton() }
         , 5000);
@@ -159,6 +160,7 @@ export class MainWrapperComponent implements OnInit {
 
   hideMainAnimationLayer() {
     this.hideAnimation = true;
+    this.animationCounter++;
   }
 
   hideContainerBackground() {

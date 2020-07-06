@@ -104,16 +104,11 @@ $font-size: 124px;
 		flex-direction: column;
 		align-items: flex-start;
 
-		&:hover {
-			cursor: pointer;
-		}
-
 		.thin {
 			font-weight: 100;
 		}
 		.fat {
-			font-family: "TT Norms Bold", sans-serif;
-			font-weight: 600;
+			font-family: "TTNorms-Bold", sans-serif;
 		}
 	}
 
@@ -123,6 +118,7 @@ $font-size: 124px;
 		align-items: center;
 		cursor: pointer;
 		margin-left: 8px;
+		z-index: 99;
 
 		.learn-more-button {
 			width: 48px;
@@ -155,32 +151,32 @@ $font-size: 124px;
 }
 
 .panel:nth-child(1) {
-	background: linear-gradient(0deg, rgba(27, 30, 32, 0.15), rgba(27, 30, 32, 0.15)), url('../../../assets/images/river-house.JPG') no-repeat center center;
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.15), rgba(27, 30, 32, 0.15)), url('../../../assets/images/river-house/river-house.jpg') no-repeat center center;
 	background-size: cover;
 }
 
 .panel:nth-child(2) {
-	background: linear-gradient(0deg, rgba(27, 30, 32, 0.14), rgba(27, 30, 32, 0.14)), url('../../../assets/images/stone-house.PNG') no-repeat center center;
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.14), rgba(27, 30, 32, 0.14)), url('../../../assets/images/stone-house/stone-house.png') no-repeat center center;
 	background-size: cover;
 }
 
 .panel:nth-child(3) {
-	background: linear-gradient(0deg, rgba(27, 30, 32, 0.15), rgba(27, 30, 32, 0.15)), url('../../../assets/images/summer-house.PNG') no-repeat center center;
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.15), rgba(27, 30, 32, 0.15)), url('../../../assets/images/summer-house/summer-house.png') no-repeat center center;
 	background-size: cover;
 }
 
 .panel:nth-child(4) {
-	background: linear-gradient(0deg, rgba(27, 30, 32, 0.29), rgba(27, 30, 32, 0.29)), url('../../../assets/images/zoloche_interior.JPG') no-repeat center center;
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.29), rgba(27, 30, 32, 0.29)), url('../../../assets/images/zoloche-interior/zoloche_interior.jpg') no-repeat center center;
 	background-size: cover;
 }
 
 .panel:nth-child(5) {
-	background: linear-gradient(0deg, rgba(27, 30, 32, 0.2), rgba(27, 30, 32, 0.2)), url('../../../assets/images/green-hills-interior.JPG') no-repeat center center;
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.2), rgba(27, 30, 32, 0.2)), url('../../../assets/images/green-hills/green-hills-interior.jpg') no-repeat center center;
 	background-size: cover;
 }
 
 .panel:nth-child(6) {
-	background: linear-gradient(0deg, rgba(27, 30, 32, 0.13), rgba(27, 30, 32, 0.13)), url('../../../assets/images/mooring_interior.JPG') no-repeat center center;
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.13), rgba(27, 30, 32, 0.13)), url('../../../assets/images/mooring/mooring_interior.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -240,7 +236,7 @@ $font-size: 124px;
 
 mat-drawer-content {
 	overflow: hidden;
-	background: linear-gradient(0deg, rgba(27, 30, 32, 0.15), rgba(27, 30, 32, 0.15)), url('../../../assets/images/river-house.jpg') no-repeat center center;
+	background: linear-gradient(0deg, rgba(27, 30, 32, 0.15), rgba(27, 30, 32, 0.15)), url('../../../assets/images/river-house/river-house.jpg') no-repeat center center;
 	background-size: cover;
 }
 
@@ -260,9 +256,13 @@ mat-drawer-content {
 	left: 70px;
 	color: rgba(255, 255, 255, 0.5);
 	opacity: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
 
 	.down {
 		font-size: 24px;
+		margin-right: 20px;
 	}
 	.scroll-title {
 		font-size: 18px;

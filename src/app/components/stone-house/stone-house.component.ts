@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {Location} from "@angular/common";
 
 @Component({
   selector: 'app-stone-house',
   templateUrl: './stone-house.component.html',
   styleUrls: ['./stone-house.component.scss'],
 })
-export class StoneHouseComponent implements OnInit {
+export class StoneHouseComponent{
 
-  constructor() { }
+  teamImgUrl: any  = 'assets/images/stone-house/stone-house-team-img.png';
+  styleImgUrl1: any = 'assets/images/stone-house/stone-house-style-1.png';
+  styleImgUrl2: any = 'assets/images/stone-house/stone-house-style-2.png';
+  backToImgUrl: any = 'assets/images/back-to-img.png';
 
-  ngOnInit(): void {
-  }
+  constructor(public _location: Location) { }
 
 }

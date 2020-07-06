@@ -7,26 +7,24 @@
 		<div class="main-sidenav-content main-content">
 
 			<div class="animation-box" [ngClass]="{'fadeOutUp': hideAnimation}">
-				<app-main-animation></app-main-animation>
+<!--				<app-main-animation></app-main-animation>-->
 			</div>
 
 			<div class="main-scroller" id="main-scroller">
 				<!-- River house -->
 				<div class="panel" [ngClass]="{'fadeIn': showMenu}">
-					<button (click)="goTo('/river-house')" [ngClass]="{'animate': showMenu}">
-						<h2 class="sub-title">
-							<span class="thin">River</span><span class="fat">House</span>
-						</h2>
-						<div class="learn-more-box">
-							<div class="learn-more-button"><div class="circle"></div></div>
-							<p>Learn more</p>
-						</div>
-					</button>
+					<h2 class="sub-title">
+						<span class="thin">River</span><span class="fat">House</span>
+					</h2>
+					<div class="learn-more-box" (click)="goTo('/river-house')">
+						<div class="learn-more-button"><div class="circle"></div></div>
+						<p>Learn more</p>
+					</div>
 				</div>
 				<!-- Stone house -->
 				<div class="panel" [ngClass]="{'fadeIn': showMenu}">
 					<h2 class="sub-title"><span class="thin">Stone</span><span class="fat">House</span></h2>
-					<div class="learn-more-box">
+					<div class="learn-more-box" (click)="goTo('/stone-house')">
 						<div class="learn-more-button"><div class="circle"></div></div>
 						<p>Learn more</p>
 					</div>
@@ -34,7 +32,7 @@
 				<!-- Summer house -->
 				<div class="panel">
 					<h2 class="sub-title"><span class="thin">Summer</span><span class="fat">House</span></h2>
-					<div class="learn-more-box">
+					<div class="learn-more-box" (click)="goTo('/summer-house')">
 						<div class="learn-more-button"><div class="circle"></div></div>
 						<p>Learn more</p>
 					</div>
@@ -42,7 +40,7 @@
 				<!-- Zoloche interior -->
 				<div class="panel">
 					<h2 class="sub-title"><span class="thin">Zoloche</span><span class="fat">Interior</span></h2>
-					<div class="learn-more-box">
+					<div class="learn-more-box" (click)="goTo('/zoloche')">
 						<div class="learn-more-button"><div class="circle"></div></div>
 						<p>Learn more</p>
 					</div>
@@ -50,7 +48,7 @@
 				<!-- Green hills interior -->
 				<div class="panel">
 					<h2 class="sub-title"><span class="thin">Green hills</span><span class="fat">Interior</span></h2>
-					<div class="learn-more-box">
+					<div class="learn-more-box" (click)="goTo('/green-hills')">
 						<div class="learn-more-button"><div class="circle"></div></div>
 						<p>Learn more</p>
 					</div>
@@ -58,7 +56,7 @@
 				<!-- Mooring interior -->
 				<div class="panel">
 					<h2 class="sub-title"><span class="thin">Mooring</span><span class="fat">Interior</span></h2>
-					<div class="learn-more-box">
+					<div class="learn-more-box" (click)="goTo('/mooring')">
 						<div class="learn-more-button"><div class="circle"></div></div>
 						<p>Learn more</p>
 					</div>
@@ -89,7 +87,7 @@
 
 			<div class="get-in-touch-box" [ngClass]="{'fadeIn': showMenu}"  (mouseover)='over()' (mouseout)='out()'>
 				<span class="get-in">+</span>
-<!--                <span class="get-in">+ Get in touch</span>-->
+			<!--<span class="get-in">+ Get in touch</span>-->
 			</div>
 
 			<div class="scrolling-indicator" [ngClass]="{'fadeIn': showMenu}">
