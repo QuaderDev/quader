@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {Location} from "@angular/common";
 
 @Component({
@@ -8,9 +8,11 @@ import {Location} from "@angular/common";
 })
 export class ZolocheInteriorComponent {
   teamImgUrl: string = 'assets/images/zoloche-interior/zoloche-interior-team.png';
-  headerImgUrl: string = 'assets/images/zoloche-interior/zoloche-interior-header.png';
+  atmoImgUrl: string = 'assets/images/zoloche-interior/zoloche-interior-atmo.png';
+  excImgUrl: string = 'assets/images/zoloche-interior/zoloche-interior-excited.png';
+  feelImgUrl: string = 'assets/images/zoloche-interior/zoloche-interior-feel.png';
   backToImgUrl: any = 'assets/images/back-to-img.png';
 
-  constructor(public _location: Location) { }
+  constructor(public _location: Location) {}
 
 }

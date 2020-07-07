@@ -8,8 +8,7 @@ import { Location} from '@angular/common';
   styleUrls: ['./mooring-interior.component.scss']
 })
 export class MooringInteriorComponent {
-  teamImgUrl: string = 'assets/images/mooring/mooring-interior-team.png';
-  headerImgUrl: string = 'assets/images/mooring/mooring-interior-header.png';
+  teamImgUrl: any = 'assets/images/mooring/mooring_interior-team.png';
   backToImgUrl: any = 'assets/images/back-to-img.png';
 
   constructor(public _location: Location) { }

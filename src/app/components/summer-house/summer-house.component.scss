@@ -3,7 +3,7 @@
 
   header {
     min-height: 810px;
-    background: linear-gradient(0deg, rgba(27, 30, 32, 0.41), rgba(27, 30, 32, 0.41)),
+    background: linear-gradient(0deg, rgba(27, 30, 32, 0.15), rgba(27, 30, 32, 0.15)),
     url('../../../assets/images/summer-house/summer-house-header.png') no-repeat center;
     background-size: cover;
     display: flex;
@@ -62,10 +62,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 160px;
     article {
       width: 100%;
       max-width: 1310px;
       margin: 0 auto;
+      h3 {
+        font: 64px 'TT Norms', sans-serif;
+        color: #FFFFFF;
+        margin: 0 0 60px 0;
+        font-weight: bold;
+      }
+      p {
+        font: 24px 'TT Norms', sans-serif;
+        margin: 0;
+        line-height: 140%;
+        letter-spacing: 0.08em;
+        color: #FFFFFF;
+        font-weight: 300;
+      }
     }
 
     article.short-overview {
@@ -74,12 +89,6 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 115px;
-
-      h3 {
-        font-weight: bold;
-        font-size: 64px;
-        color: #FFFFFF;
-      }
 
       .overview {
         font-size: 24px;
@@ -108,13 +117,6 @@
       margin-bottom: 160px;
       .team-box {
         padding-top: 74px;
-        h3 {
-          font-weight: bold;
-          font-size: 64px;
-          color: #FFFFFF;
-          margin-bottom: 74px;
-        }
-
         ul {
           list-style-type: none;
           padding: 0;
@@ -132,6 +134,54 @@
             }
           }
         }
+      }
+    }
+    article.rest {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 116px;
+      .rest-text {
+        color: #FFFFFF;
+        max-width: 460px;
+      }
+      .img-box {
+        margin-right: 80px;
+      }
+    }
+    article.nature {
+      margin-bottom: 160px;
+      .img-box {
+        margin: 0 0 116px 0;
+      }
+      .nature-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .left {
+          margin: 0 100px 0 0px;
+        }
+      }
+    }
+  }
+  article.air {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 160px;
+    .img-box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      margin: 0 0 80px 0;
+    }
+    .air-text {
+      display: flex;
+      flex-direction: row;
+      h3 {
+        margin-right: 80px;
       }
     }
   }

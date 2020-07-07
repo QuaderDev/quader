@@ -132,16 +132,16 @@
     font-style: italic;
 }
 
-@font-face {
-    font-family: 'TT Norms Bold';
-    src: url('TTNorms-BoldItalic.eot');
-    src: local('TT Norms Bold Italic'), local('TTNorms-BoldItalic'),
-        url('TTNorms-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('TTNorms-BoldItalic.woff') format('woff'),
-        url('TTNorms-BoldItalic.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
-}
+/*@font-face {*/
+/*    font-family: 'TT Norms Bold';*/
+/*    src: url('TTNorms-BoldItalic.eot');*/
+/*    src: local('TT Norms Bold Italic'), local('TTNorms-BoldItalic'),*/
+/*        url('TTNorms-BoldItalic.eot?#iefix') format('embedded-opentype'),*/
+/*        url('TTNorms-BoldItalic.woff') format('woff'),*/
+/*        url('TTNorms-BoldItalic.ttf') format('truetype');*/
+/*    font-weight: bold;*/
+/*    font-style: italic;*/
+/*}*/
 
 @font-face {
     font-family: 'TT Norms';
