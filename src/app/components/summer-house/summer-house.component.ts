@@ -1,20 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Location} from '@angular/common';
+
 @Component({
   selector: 'app-summer-house',
-  template: `
-    <p>
-      summer-house works!
-    </p>
-  `,
-  styles: [
-  ]
+  templateUrl: './summer-house.component.html',
+  styleUrls: ['./summer-house.component.scss']
 })
-export class SummerHouseComponent implements OnInit {
+export class SummerHouseComponent {
+  airImgUrl1: string = 'assets/images/summer-house/summer-house-';
+  airImgUrl2: string = 'assets/images/summer-house/summer-house-';
+  headerImgUrl: string = 'assets/images/summer-house/summer-house-header.png';
+  natureImgUrl: string = 'assets/images/summer-house/summer-house-';
+  restImgUrl: string = 'assets/images/summer-house/summer-house-';
+  teamImgUrl: string = 'assets/images/summer-house/summer-house-team.png';
+  backToImgUrl: any = 'assets/images/back-to-img.png';
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  constructor(public _location: Location) { }
 
 }

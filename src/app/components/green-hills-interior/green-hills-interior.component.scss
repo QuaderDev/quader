@@ -1,0 +1,154 @@
+.green-hills-interior {
+  background-color: #1B1E20;
+
+  header {
+    min-height: 810px;
+    background: linear-gradient(0deg, rgba(27, 30, 32, 0.41), rgba(27, 30, 32, 0.41)),
+    url('../../../assets/images/green-hills/green-hills-header.png') no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 175px;
+
+    h1 {
+      font-size: 124px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      color: #F2F2F2;
+      margin: 0 0 24px 0;
+
+      .thin {
+        font-weight: 100;
+        margin-right: 24px;
+      }
+    }
+
+    .gallery-box {
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .box {
+        width: 205px;
+        height: 65px;
+        border: 1px solid #FFFFFF;
+        padding: 0 24px;
+        border-radius: 3px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:nth-child(1) {
+          margin-right: 64px;
+        }
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    article {
+      width: 100%;
+      max-width: 1310px;
+      margin: 0 auto;
+    }
+
+    article.short-overview {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 115px;
+
+      h3 {
+        font-weight: bold;
+        font-size: 64px;
+        color: #FFFFFF;
+      }
+
+      .overview {
+        font-size: 24px;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-width: 540px;
+
+        p {
+          span {
+            display: inline-block;
+
+            &:nth-child(1) {
+              font-weight: 100;
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+    article.team {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 160px;
+      .team-box {
+        padding-top: 74px;
+        h3 {
+          font-weight: bold;
+          font-size: 64px;
+          color: #FFFFFF;
+          margin-bottom: 74px;
+        }
+
+        ul {
+          list-style-type: none;
+          padding: 0;
+          li {
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: 0.04em;
+            text-decoration-line: underline;
+            color: #FFFFFF;
+            margin-bottom: 48px;
+            font-weight: 100;
+
+            &:nth-child(3) {
+              margin: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    padding: 0 22px;
+
+    button {
+      width: 100%;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      margin-bottom: 30px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

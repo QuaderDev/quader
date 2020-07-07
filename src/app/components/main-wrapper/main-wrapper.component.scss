@@ -287,10 +287,13 @@ mat-drawer-content {
 	font-size: 18px;
 	line-height: 96.3%;
 
+	transition:all 0.4s ease 0s;
+
 	&:hover {
 		cursor: pointer;
 		width: 193px;
 		border-radius: 63px;
+		transition:all 0.4s ease 0s;
 	}
 	.get-in {
 		font-size: 33px;

@@ -141,6 +141,7 @@ section.stone-house {
         justify-content: flex-start;
         align-items: center;
         margin-bottom: 160px;
+        position: relative;
 
         .style-img {
           margin-right: 60px;
@@ -161,6 +162,9 @@ section.stone-house {
         .style-box {
           color: #FFFFFF;
           max-width: 530px;
+          position: absolute;
+          top: 10%;
+          left: 50%;
 
           h3 {
             font-weight: bold;
@@ -176,73 +180,63 @@ section.stone-house {
           }
         }
       }
-      .feel {
-        margin-bottom: 88px;
+      .space {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        .feel-img {
-          width: 100%;
-          margin-bottom: 60px;
-          img {
-            width: 100%;
+        align-items: flex-start;
+        position: relative;
+        margin-bottom: 60px;
+        .space-text {
+          max-width: 521px;
+          h3 {
+            font-weight: bold;
+            font-size: 64px;
+            color: #FFFFFF;
+            margin-bottom: 74px;
+          }
+          p {
+            font-size: 24px;
+            line-height: 140%;
+            font-weight: 100;
+            color: #FFFFFF;
           }
         }
-        .feel-box {
-          .feel-text {
-            display: flex;
-            flex-direction: row;
-            color: white;
-            align-items: center;
-            h3 {
-              font-weight: bold;
-              font-size: 64px;
-              margin: 0 102px 0 0;
-            }
-            p {
-              font-weight: 100;
-              font-size: 24px;
-              line-height: 140%;
-              text-align: justify;
-            }
+        .space-img {
+          z-index: 0;
+          img:nth-child(1) {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+          }
+          img:nth-child(2) {
+            z-index: 1;
           }
         }
       }
-
-      .understand {
-        margin-bottom: 450px;
-        .understand-img-box{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          position: relative;
-
-          :nth-child(2) {
-            position: absolute;
-            top: 75%;
-            left: 13%;
-          }
-        }
-        .understand-text-box {
-          max-width: 508px;
-          max-height: 476px;
-          margin: 8% 22% 0 auto;
-
+      .design {
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+        .title {
           h3 {
-            //font-family: TT Norms Pro;
-            font-style: normal;
             font-weight: bold;
             font-size: 64px;
-            margin-bottom: 62px;
-            color: #FFFFFF;
           }
+        }
+        .design-text {
+          display: flex;
+          flex-direction: row;
           p {
-            font-weight: 100;
             font-size: 24px;
             line-height: 140%;
-            letter-spacing: 0.08em;
-            color: #FFFFFF;
-            text-align: justify;
+            max-width: 410px;
+            &:nth-child(1) {
+              margin-right: 88px;
+            }
           }
         }
       }

@@ -1,0 +1,55 @@
+<section class="green-hills-interior">
+    <header>
+        <h1>
+            <span class="thin">Green Hills</span>
+            <span class="fat">Interior</span>
+        </h1>
+        <div class="gallery-box">
+            <div class="box carousel">All Photos</div>
+            <div class="box 360">Watch in 360<span>&#176;</span></div>
+        </div>
+    </header>
+    <main>
+        <article class="short-overview">
+            <h3>Short overview</h3>
+            <div class="overview">
+                <p>
+                    <span>Year:</span>
+                    <br>
+                    <span>2018</span>
+                </p>
+                <p>
+                    <span>Location:</span>
+                    <br>
+                    <span>Outside Kyiv</span>
+                </p>
+                <p>
+                    <span>Area:</span>
+                    <br>
+                    <span>350 m2</span>
+                </p>
+            </div>
+        </article>
+        <article class="team">
+            <div class="team-box">
+                <h3>Team</h3>
+                <ul>
+                    <li>Artem Bondar</li>
+                    <li>Nikolay Gip</li>
+                    <li>Anton Removskyi</li>
+                </ul>
+            </div>
+            <div class="team-img">
+                <img [src]="teamImgUrl" alt="">
+            </div>
+        </article>
+        <article class="rest"></article>
+        <article class="nature"></article>
+        <article class="air"></article>
+    </main>
+    <footer>
+        <button (click)="_location.back()">
+            <img [src]="backToImgUrl" alt="">
+        </button>
+    </footer>
+</section>

@@ -8,11 +8,11 @@ import { Location} from '@angular/common';
   styleUrls: ['./river-house.component.scss']
 })
 export class RiverHouseComponent {
-  teamImgUrl: any  = 'assets/images/riverhouse-team-img.png';
-  seeImgUrl: any = 'assets/images/river-house-see-img.png';
-  feelImgUrl: any = 'assets/images/river-house-feel-img.png';
-  understandTopImgUrl: any = 'assets/images/river-house-understand-top-img.png';
-  understandBotImgUrl: any = 'assets/images/river-house-understand-bottom-img.png';
+  teamImgUrl: any  = 'assets/images/river-house/riverhouse-team-img.png';
+  seeImgUrl: any = 'assets/images/river-house/river-house-see-img.png';
+  feelImgUrl: any = 'assets/images/river-house/river-house-feel-img.png';
+  understandTopImgUrl: any = 'assets/images/river-house/river-house-understand-top-img.png';
+  understandBotImgUrl: any = 'assets/images/river-house/river-house-understand-bottom-img.png';
   backToImgUrl: any = 'assets/images/back-to-img.png';
 
   constructor(public _location: Location) {
