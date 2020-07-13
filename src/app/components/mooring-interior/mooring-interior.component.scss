@@ -66,6 +66,20 @@
       width: 100%;
       max-width: 1310px;
       margin: 0 auto;
+      h3 {
+        font: 64px 'TT Norms', sans-serif;
+        color: #FFFFFF;
+        margin: 0 0 60px 0;
+        font-weight: bold;
+      }
+      p {
+        font: 24px 'TT Norms', sans-serif;
+        margin: 0;
+        line-height: 160%;
+        letter-spacing: 0.08em;
+        color: #FFFFFF;
+        font-weight: 300;
+      }
     }
 
     article.short-overview {
@@ -132,6 +146,44 @@
             }
           }
         }
+      }
+    }
+    article.difference {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 120px;
+      .img-box {
+        margin-right: 126px;
+      }
+    }
+    article.see {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      .img-box, .see-text {
+        margin-bottom: 60px;
+      }
+      .see-text {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        h3, p:nth-child(2n){
+          margin-right: 100px;
+        }
+      }
+
+    }
+    article.feel {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      margin-bottom: 94px;
+      .feel-text {
+        margin-right: 130px;
+      }
+      .img-box {
+        margin-right: 95px;
       }
     }
   }

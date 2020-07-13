@@ -16,11 +16,11 @@
         <h2 class="title">Projects</h2>
         <ul>
             <li (click)="goTo('/river-house')"><span class="thin">River</span><span class="bold">House</span></li>
-            <li><span class="thin">Stone</span><span class="bold">House</span></li>
-            <li><span class="thin">Summer</span><span class="bold">House</span></li>
-            <li><span class="thin">Zoloche</span><span class="bold">Interior</span></li>
-            <li><span class="thin">Green Hills</span><span class="bold">Interior</span></li>
-            <li><span class="thin">Mooring</span><span class="bold">Interior</span></li>
+            <li (click)="goTo('/stone-house')"><span class="thin">Stone</span><span class="bold">House</span></li>
+            <li (click)="goTo('/summer-house')"><span class="thin">Summer</span><span class="bold">House</span></li>
+            <li (click)="goTo('/zoloche')"><span class="thin">Zoloche</span><span class="bold">Interior</span></li>
+            <li (click)="goTo('/gree-hills')"><span class="thin">Green Hills</span><span class="bold">Interior</span></li>
+            <li (click)="goTo('/mooring')"><span class="thin">Mooring</span><span class="bold">Interior</span></li>
         </ul>
     </div>
 
@@ -57,7 +57,7 @@
             <p class="title">E-mail</p>
             <p class="context"><a href="mailto:pr@quader.com">pr@quader.com</a></p>
         </div>
-        <div class="get-in-touch">
+        <div class="get-in-touch" (click)="goTo('/get-in-touch')">
             <span>Get in touch</span>
             <span class="plus">+</span>
         </div>

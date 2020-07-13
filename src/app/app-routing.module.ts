@@ -9,6 +9,7 @@ import {SummerHouseComponent} from "./components/summer-house/summer-house.compo
 import {ZolocheInteriorComponent} from "./components/zoloche-interior/zoloche-interior.component";
 import {GreenHillsInteriorComponent} from "./components/green-hills-interior/green-hills-interior.component";
 import {MooringInteriorComponent} from "./components/mooring-interior/mooring-interior.component";
+import {GetInTouchComponent} from "./components/get-in-touch/get-in-touch.component";
 
 const routes: Routes = [
   { path: '', component: MainWrapperComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'green-hills', component: GreenHillsInteriorComponent},
   {path: 'mooring', component: MooringInteriorComponent},
   {path: 'about', component: AboutComponent},
+  {path: 'get-in-touch', component: GetInTouchComponent},
 ];
 
 @NgModule({

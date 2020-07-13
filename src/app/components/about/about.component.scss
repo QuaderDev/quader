@@ -1,0 +1,210 @@
+section.about {
+  background: #1B1E20;
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 170px 65px 160px 65px;
+
+    .title {
+      color: #F2F2F2;
+      font-size: 124px;
+      font-family: "TT Norms", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .about {
+      }
+      .quader {
+        font-family: "Gotham Pro Bold", sans-serif;
+        font-weight: bold;
+      }
+    }
+  }
+
+  article {
+    width: 100%;
+    max-width: 1310px;
+    margin: 0 auto;
+    h3 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+
+  article.architecture {
+    margin: 0 auto 160px auto;
+    .architecture-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: #FFFFFF;
+      justify-content: space-between;
+      line-height: 140%;
+      margin-bottom: 60px;
+      h3 {
+        font-size: 64px;
+        font-weight: bold;
+        line-height: 96.3%;
+      }
+      p {
+        font-size: 16px;
+        max-width: 300px;
+      }
+    }
+    .architecture-body {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .architecture-footer {
+      ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+        li {
+          margin-right: 80px;
+          span {
+            color: #FFFFFF;
+            &:nth-child(1) {
+              font-weight: bold;
+              font-size: 64px;
+              line-height: 96.3%;
+              margin-right: 12px;
+            }
+            &:nth-child(2) {
+              font-weight: normal;
+              font-size: 24px;
+              line-height: 140%;
+            }
+          }
+        }
+      }
+    }
+  }
+  article.interior {
+    margin: 0 auto 140px auto;
+    .interior-header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: #FFFFFF;
+      justify-content: space-between;
+      line-height: 140%;
+      margin-bottom: 60px;
+
+      h3 {
+        font-size: 64px;
+        font-weight: bold;
+        line-height: 96.3%;
+      }
+      p {
+        font-size: 16px;
+        max-width: 300px;
+        line-height: 140%;
+      }
+    }
+    .interior-footer {
+      ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+        li {
+          margin-right: 80px;
+          span {
+            color: #FFFFFF;
+            &:nth-child(1) {
+              font-weight: bold;
+              font-size: 64px;
+              line-height: 96.3%;
+              margin-right: 12px;
+            }
+            &:nth-child(2) {
+              font-weight: normal;
+              font-size: 24px;
+              line-height: 140%;
+            }
+          }
+        }
+      }
+    }
+  }
+  article.character {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: #FFFFFF;
+    margin-bottom: 160px;
+
+    .character-title-box {
+      flex: 1;
+      h3 {
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 96.3%;
+        margin: 0;
+      }
+
+    }
+    .character-description-box {
+      flex: 1;
+      p {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 140%;
+        margin: 0;
+        max-width: 500px;
+      }
+    }
+  }
+  article.people {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    color: #FFFFFF;
+    .people-title-box {
+      flex: 1;
+      h3 {
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 96.3%;
+        margin: 0;
+      }
+    }
+    .people-description-box {
+      flex: 1;
+      ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+          color: #FFFFFF;
+          margin-bottom: 80px;
+          h3 {
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 96.3%;
+            margin: 40px 0 24px 0;
+          }
+          p {
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 140%;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
