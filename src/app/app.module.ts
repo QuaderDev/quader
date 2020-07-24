@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
+import { RouterModule } from '@angular/router';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
@@ -44,7 +46,8 @@ import { GetInTouchComponent } from './components/get-in-touch/get-in-touch.comp
     CommonModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    MatInputModule
+    MatInputModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
