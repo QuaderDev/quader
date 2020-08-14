@@ -8,6 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "build:dev": "ng build --prod --base-href 'https://quaderdev.github.io/quader/'",
     "deploy": "angular-cli-ghpages --dir=dist/quader-angular"
   },
   "private": true,
