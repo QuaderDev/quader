@@ -5,7 +5,7 @@
             <span class="fat">House</span>
         </h1>
         <div class="gallery-box">
-            <div class="box carousel">All Photos</div>
+            <div class="box carousel" (click)="showCarouselModal()">All Photos</div>
             <div class="box 360">Watch in 360<span>&#176;</span></div>
         </div>
     </header>
@@ -95,3 +95,4 @@
         </button>
     </footer>
 </section>
+<ngx-gallery *ngIf="galleryOptions?.length && galleryImages?.length" [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>

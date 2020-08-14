@@ -21,6 +21,7 @@ import { ZolocheInteriorComponent } from './components/zoloche-interior/zoloche-
 import { GreenHillsInteriorComponent } from './components/green-hills-interior/green-hills-interior.component';
 import { MooringInteriorComponent } from './components/mooring-interior/mooring-interior.component';
 import { GetInTouchComponent } from './components/get-in-touch/get-in-touch.component';
+import {NgxGalleryModule} from "@kolkov/ngx-gallery";
 
 
 
@@ -47,7 +48,8 @@ import { GetInTouchComponent } from './components/get-in-touch/get-in-touch.comp
     BrowserAnimationsModule,
     MatSidenavModule,
     MatInputModule,
-    RouterModule
+    RouterModule,
+    NgxGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

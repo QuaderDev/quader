@@ -30,9 +30,7 @@
         transform: translate3d(-100%, 0, 0);
         visibility: visible;
     }
-
     to {
-
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
@@ -42,7 +40,6 @@
     from {
         opacity: 1;
     }
-
     to {
         opacity: 0;
     }
@@ -79,7 +76,7 @@
 
         &.twist {
             top: calc(50% - 50px);
-            animation: logo-twist 2s 1s both;
+            animation: logo-twist 2s 1.55s both;
         }
         &.fadeOut {
             animation: fadeOut 1s .5s both;
@@ -94,7 +91,7 @@
         left: calc(45% + 10px);
 
         &.entering {
-            animation: slideInLeft 2s 1.75s both;
+            animation: slideInLeft 2s 1.55s both;
         }
         &.fadeOut {
             animation: fadeOut 1s .5s both;

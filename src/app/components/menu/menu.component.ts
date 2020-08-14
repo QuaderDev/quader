@@ -14,12 +14,9 @@ export class MenuComponent implements OnInit{
   }
 
   ngOnInit() {
-    console.log(this.activatedRoute);
     this.activatedRoute.fragment.subscribe(fragment => {
-      console.log(fragment);
       if (fragment) {
         const a = document.querySelector('#' + fragment).scrollIntoView(true);
-        console.log(a);
       }
     });
   }
