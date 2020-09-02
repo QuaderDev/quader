@@ -3,8 +3,7 @@ section.stone-house {
 
   header {
     min-height: 810px;
-    background: linear-gradient(0deg, rgba(27, 30, 32, 0.24), rgba(27, 30, 32, 0.24)),
-    url('../../../assets/images/stone-house/stone-house-header.png') no-repeat center center;
+    background: url('../../../assets/images/stone-house/stone-house-header.png') no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -17,7 +16,7 @@ section.stone-house {
       line-height: 100%;
       letter-spacing: 0.04em;
       color: #F2F2F2;
-      margin: 0 0 24px 0;
+      margin: 0 0 58px 0;
 
       .thin {
         font-weight: 100;

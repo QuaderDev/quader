@@ -5,7 +5,7 @@ section.about {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 170px 65px 160px 65px;
 
     .title {
@@ -16,8 +16,6 @@ section.about {
       flex-direction: column;
       align-items: flex-start;
 
-      .about {
-      }
       .quader {
         font-family: "Gotham Pro Bold", sans-serif;
         font-weight: bold;
@@ -59,6 +57,7 @@ section.about {
     }
     .architecture-body {
       width: 100%;
+      margin: 0 0 48px 0;
       img {
         width: 100%;
       }
@@ -113,10 +112,14 @@ section.about {
         line-height: 140%;
       }
     }
+    .interior-body {
+      margin: 0 0 48px 0;
+    }
     .interior-footer {
       ul {
         list-style-type: none;
         padding: 0;
+        margin: 0;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
