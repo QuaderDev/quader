@@ -13,6 +13,10 @@ export class MainWrapperComponent implements OnInit {
   public showMenu: boolean;
   public fullGetIn: boolean;
   public hideBackground: boolean;
+ 
+  public initStep: number = 1;
+  public lastStep: number = 6;
+
   private animationCounter: number;
 
   constructor(private router: Router) {
@@ -39,7 +43,7 @@ export class MainWrapperComponent implements OnInit {
   }
 
   scrolling() {
-    (function() {
+    (() => {
       "use strict";
       /*[pan and well CSS scrolls]*/
       let pnls = document.querySelectorAll('.panel').length,
@@ -122,10 +126,12 @@ export class MainWrapperComponent implements OnInit {
             }
             if (obj.id === 'main-scroller') {
               if (swdir === 'up') {
+              
                 scdir = swdir;
                 _scrollY(obj);
               } else if (swdir === 'down' && obj.style.transform !== 'translateY(0)') {
                 scdir = swdir;
+                
                 _scrollY(obj);
 
               }
@@ -140,10 +146,14 @@ export class MainWrapperComponent implements OnInit {
       well.addEventListener('wheel', function(e) {
         if (e.deltaY < 0) {
           scdir = 'down';
+          indicatorScrolling(this.initStep++);
         }
         if (e.deltaY > 0) {
           scdir = 'up';
+          console.log('down');
+          this.indicatorScrolling(this.initStep--);
         }
+
         e.stopPropagation();
       });
       well.addEventListener('wheel', _scrollY);
@@ -181,6 +191,10 @@ export class MainWrapperComponent implements OnInit {
 
   goTo(path: string):void {
     this.router.navigateByUrl(path);
+  }
+
+  indicatorScrolling(step) {
+    console.log(step);
   }
 
 }

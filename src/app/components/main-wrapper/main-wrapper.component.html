@@ -91,9 +91,9 @@
 			</div>
 
 			<div class="scrolling-indicator" [ngClass]="{'fadeIn': showMenu}">
-				<div class="current-page">01</div>
+				<div class="current-page">0{{initStep}}</div>
 				<div class="line"></div>
-				<div class="total-pages">06</div>
+				<div class="total-pages">0{{lastStep}}</div>
 			</div>
 		</div>
 	</mat-drawer-content>
