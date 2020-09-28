@@ -146,12 +146,12 @@ export class MainWrapperComponent implements OnInit {
       well.addEventListener('wheel', function(e) {
         if (e.deltaY < 0) {
           scdir = 'down';
-          indicatorScrolling(this.initStep++);
+          // indicatorScrolling(this.initStep++);
         }
         if (e.deltaY > 0) {
           scdir = 'up';
           console.log('down');
-          this.indicatorScrolling(this.initStep--);
+          // this.indicatorScrolling(this.initStep--);
         }
 
         e.stopPropagation();

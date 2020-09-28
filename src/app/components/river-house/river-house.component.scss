@@ -1,15 +1,21 @@
 section.river-house {
   background-color: #1B1E20;
+  height: 100vh;
 
   header {
-    min-height: 810px;
-    background: url('../../../assets/images/river-house/river-house-header.png') no-repeat center;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 175px;
+    background: url('../../../assets/images/river-house/river-house-header-2.png') no-repeat top center;
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+
+    img {
+      width: 100%;
+    }
 
     h1 {
       font-size: 124px;
@@ -17,6 +23,7 @@ section.river-house {
       letter-spacing: 0.04em;
       color: #F2F2F2;
       margin: 0 0 58px 0;
+      position: absolute;
 
       .thin {
         font-weight: 100;
@@ -48,10 +55,6 @@ section.river-house {
         &:hover {
           cursor: pointer;
         }
-
-        &:nth-child(1) {
-          margin-right: 64px;
-        }
       }
     }
   }
@@ -60,6 +63,8 @@ section.river-house {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1310px;
+    margin: auto;
     article {
       width: 100%;
       max-width: 1310px;
@@ -205,6 +210,9 @@ section.river-house {
           flex-direction: column;
           align-items: center;
           position: relative;
+          img {
+            width: 100%;
+          }
 
           :nth-child(2) {
             align-self: flex-start;
@@ -247,6 +255,15 @@ section.river-house {
       img {
         width: 100%;
       }
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  section.river-house {
+    header {
+      background: url('../../../assets/images/river-house/river-house-header-mobile-2.png') no-repeat center;
+      background-size: cover;
     }
   }
 }
